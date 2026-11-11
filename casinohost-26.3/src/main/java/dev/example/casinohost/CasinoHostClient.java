@@ -13,7 +13,7 @@ import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.resources.Identifier;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.phys.Vec3;
-import org.lwjgl.glfw.GLFW;
+
 
 import java.util.*;
 import java.util.regex.Matcher;
@@ -42,7 +42,7 @@ public class CasinoHostClient implements ClientModInitializer {
         KeyMapping.Category category = KeyMapping.Category.register(
                 Identifier.fromNamespaceAndPath("casinohost", "main"));
         menuKey = KeyMappingHelper.registerKeyMapping(
-                new KeyMapping("key.casinohost.menu", InputConstants.Type.KEYSYM, GLFW.GLFW_KEY_R, category));
+                   new KeyMapping("key.casinohost.menu", InputConstants.KEY_R, category));
 
         ClientReceiveMessageEvents.GAME.register((msg, overlay) -> {
             if (overlay) return;
