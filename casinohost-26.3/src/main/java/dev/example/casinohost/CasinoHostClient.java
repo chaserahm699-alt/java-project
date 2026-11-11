@@ -24,7 +24,7 @@ public class CasinoHostClient implements ClientModInitializer {
     public static final long MIN_PAY = 1_000_000L;
 
     // !!! Adjust to DonutSMP's real payment message (send yourself a payment and look at chat) !!!
-    static final Pattern PAID = Pattern.compile("(\\w{3,16}) (?:paid|sent) you \\$?([\\d,.]+[KkMmBb]?)");
+       static final Pattern PAID = Pattern.compile("(\\w{3,16}) (?:paid|sent) you\\s+\\$?\\s*([\\d,.]+[KkMmBb]?)");
 
     /** total paid per player */
     public static final Map<String, Long> totals = new LinkedHashMap<>();
