@@ -37,7 +37,7 @@ public class Hud {
 
     public static void extract(GuiGraphicsExtractor g, DeltaTracker delta) {
         Minecraft mc = Minecraft.getInstance();
-        if (mc.options.hideGui || mc.player == null) return;
+           if (mc.player == null) return;
         Font f = mc.font;
         int sw = g.guiWidth(), sh = g.guiHeight();
 
