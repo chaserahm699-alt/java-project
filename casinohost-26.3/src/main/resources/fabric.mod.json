@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "id": "casinohost",
+  "version": "${version}",
+  "name": "Casino Host HUD",
+  "description": "HUD of players who paid 1M+, with auto roulette and auto blackjack.",
+  "environment": "client",
+  "entrypoints": { "client": ["dev.example.casinohost.CasinoHostClient"] },
+  "depends": {
+    "fabricloader": ">=0.19.5",
+    "minecraft": "~26.3",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}
